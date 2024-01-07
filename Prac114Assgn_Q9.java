@@ -10,19 +10,14 @@ public class Prac114Assgn_Q9 {
 		int placevalue = 1;
 		int lastdigit;
 		
-		while(n!=0) {  //n will continue until it gets 0
-			lastdigit = n%10;
+		while(n!=0) {  		//n will continue until it gets 0
+			lastdigit = n%10;    			//storing remainder in lastdigit
 			if(lastdigit!=0) {
-				result = result +lastdigit*placevalue;
-				placevalue = placevalue*10;
+				result = result +lastdigit*placevalue;         	//lastdigit*current placevalue
+				placevalue = placevalue*10;			//increment the placevalue to the next point
 			}
-			n = n/10;
+			n = n/10;		//it removes the last digit from the value
 		}
-		System.out.println("after removing 0 from "+ n + "the new number is "+ result);
-		
-		
-		
-		
+		System.out.println("after removing 0 from "+ n + "the new number is "+ result);	
 	}
-
 }
